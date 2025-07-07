@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoTap.MerchantService.WebApi", "GoTap.MerchantService.WebApi\GoTap.MerchantService.WebApi.csproj", "{D86DB92B-E04B-435D-8B0C-747BC46D2A6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoTap.MerchantService.Application", "GoTap.MerchantService.Application\GoTap.MerchantService.Application.csproj", "{902D8AFB-1451-42E3-A69D-CE3CFC2F1E1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoTap.MerchantService.Domain", "GoTap.MerchantService.Domain\GoTap.MerchantService.Domain.csproj", "{05A91810-8E6C-4AF8-8C72-3232F65CDB17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoTap.MerchantService.Infrastructure", "GoTap.MerchantService.Infrastructure\GoTap.MerchantService.Infrastructure.csproj", "{AB4BFFC9-C147-4BD7-9714-90AFF76BB6AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoTap.MerchantService.Persistence", "GoTap.MerchantService.Persistence\GoTap.MerchantService.Persistence.csproj", "{E39B0EAE-6545-42B2-82F6-8F38C94269D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoTap.MerchantService.Tests", "GoTap.MerchantService.Tests\GoTap.MerchantService.Tests.csproj", "{EA86945C-2D56-4A7B-83BD-2615BC76D3F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D86DB92B-E04B-435D-8B0C-747BC46D2A6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D86DB92B-E04B-435D-8B0C-747BC46D2A6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D86DB92B-E04B-435D-8B0C-747BC46D2A6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D86DB92B-E04B-435D-8B0C-747BC46D2A6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{902D8AFB-1451-42E3-A69D-CE3CFC2F1E1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{902D8AFB-1451-42E3-A69D-CE3CFC2F1E1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{902D8AFB-1451-42E3-A69D-CE3CFC2F1E1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{902D8AFB-1451-42E3-A69D-CE3CFC2F1E1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05A91810-8E6C-4AF8-8C72-3232F65CDB17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05A91810-8E6C-4AF8-8C72-3232F65CDB17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05A91810-8E6C-4AF8-8C72-3232F65CDB17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05A91810-8E6C-4AF8-8C72-3232F65CDB17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB4BFFC9-C147-4BD7-9714-90AFF76BB6AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB4BFFC9-C147-4BD7-9714-90AFF76BB6AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB4BFFC9-C147-4BD7-9714-90AFF76BB6AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB4BFFC9-C147-4BD7-9714-90AFF76BB6AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E39B0EAE-6545-42B2-82F6-8F38C94269D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E39B0EAE-6545-42B2-82F6-8F38C94269D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E39B0EAE-6545-42B2-82F6-8F38C94269D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E39B0EAE-6545-42B2-82F6-8F38C94269D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA86945C-2D56-4A7B-83BD-2615BC76D3F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA86945C-2D56-4A7B-83BD-2615BC76D3F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA86945C-2D56-4A7B-83BD-2615BC76D3F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA86945C-2D56-4A7B-83BD-2615BC76D3F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {31FE281B-82DF-4FBD-98C1-12A635232F49}
+	EndGlobalSection
+EndGlobal

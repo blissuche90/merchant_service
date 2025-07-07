@@ -1,0 +1,6 @@
+@GoTap.MerchantService.WebApi_HostAddress = http://localhost:5047
+
+GET {{GoTap.MerchantService.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
