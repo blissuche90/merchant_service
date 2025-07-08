@@ -17,7 +17,6 @@ namespace GoTap.MerchantService.Tests.Integration
         [Fact]
         public async Task PostMerchant_ShouldReturnCreated_WhenCountryIsValid()
         {
-            // Arrange
             var request = new
             {
                 BusinessName = "IntegrationBiz",
@@ -27,17 +26,14 @@ namespace GoTap.MerchantService.Tests.Integration
                 Country = "Germany"
             };
 
-            // Act
             var response = await _client.PostAsJsonAsync("/api/merchants", request);
 
-            // Assert
             Assert.Equal(System.Net.HttpStatusCode.Created, response.StatusCode);
         }
 
         [Fact]
         public async Task PostMerchant_ShouldReturnBadRequest_WhenCountryIsInvalid()
         {
-            // Arrange
             var request = new
             {
                 BusinessName = "FailBiz",
@@ -47,10 +43,8 @@ namespace GoTap.MerchantService.Tests.Integration
                 Country = "Atlantis"
             };
 
-            // Act
             var response = await _client.PostAsJsonAsync("/api/merchants", request);
 
-            // Assert
             Assert.Equal(System.Net.HttpStatusCode.BadRequest, response.StatusCode);
         }
     }
