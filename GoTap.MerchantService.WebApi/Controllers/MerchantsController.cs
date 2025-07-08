@@ -18,8 +18,15 @@ namespace GoTap.MerchantService.WebApi.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(CreateMerchantCommand command)
         {
-            var id = await _mediator.Send(command);
-            return CreatedAtAction(nameof(GetById), new { id }, new { id });
+            try
+            {
+                var id = await _mediator.Send(command);
+                return CreatedAtAction(nameof(GetById), new { id }, new { id });
+            }
+            catch (FluentValidation.ValidationException ex)
+            {
+                return BadRequest(new { error = ex.Message });
+            }
         }
 
         [HttpGet("{id}")]

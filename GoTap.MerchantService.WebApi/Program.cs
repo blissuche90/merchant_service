@@ -1,4 +1,5 @@
-using FluentValidation;
+﻿using FluentValidation;
+using FluentValidation.AspNetCore; 
 using GoTap.MerchantService.Application.Features.Merchants.Commands.CreateMerchant;
 using GoTap.MerchantService.Application.Interfaces;
 using GoTap.MerchantService.Application.Validators;
@@ -18,7 +19,11 @@ builder.Services.AddDbContext<MerchantDbContext>(opt =>
     opt.UseInMemoryDatabase("MerchantDb"));
 
 builder.Services.AddMediatR(typeof(CreateMerchantCommand).Assembly);
+
+builder.Services.AddFluentValidationAutoValidation();
+builder.Services.AddFluentValidationClientsideAdapters();
 builder.Services.AddValidatorsFromAssembly(typeof(CreateMerchantValidator).Assembly);
+
 builder.Services.AddHttpClient<ICountryValidatorService, RestCountriesService>();
 builder.Services.AddScoped<IMerchantRepository, MerchantRepository>();
 builder.Services.AddCors();
@@ -31,3 +36,5 @@ app.UseCors(x => x.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
 app.UseAuthorization();
 app.MapControllers();
 app.Run();
+
+public partial class Program { }
